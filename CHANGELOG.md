@@ -1,3 +1,7 @@
+## 3.3.0
+
+* Update to use with Flutter 3.22.0
+
 ## 3.2.0
 
 * Remove generated localization class ([#215](https://github.com/Idean/Flutter-Neumorphic/pull/215))

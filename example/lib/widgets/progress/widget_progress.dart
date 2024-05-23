@@ -1,13 +1,12 @@
 import 'package:example/lib/Code.dart';
 import 'package:example/lib/color_selector.dart';
 import 'package:example/lib/top_bar.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 import 'dart:math' show Random;
 
 class ProgressWidgetPage extends StatefulWidget {
-  ProgressWidgetPage({Key key}) : super(key: key);
+  ProgressWidgetPage({super.key});
 
   @override
   createState() => _WidgetPageState();
@@ -110,7 +109,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
@@ -323,7 +322,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
@@ -384,7 +383,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {

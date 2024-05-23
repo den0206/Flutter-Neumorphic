@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class CalculatorSample extends StatefulWidget {
@@ -64,7 +63,7 @@ class WidgetCalcButton extends StatelessWidget {
     }
   }
 
-  Color _backgroundColor(BuildContext context) {
+  Color? _backgroundColor(BuildContext context) {
     return button.backgroundAccent
         ? NeumorphicTheme.accentColor(context)
         : null;
@@ -99,7 +98,7 @@ class _TopScreenWidget extends StatelessWidget {
     return Neumorphic(
       style: NeumorphicStyle(
         boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
-        depth: -1 * NeumorphicTheme.of(context).current.depth,
+        depth: -1 * (NeumorphicTheme.of(context)?.current?.depth ?? 1),
       ),
       child: FractionallySizedBox(
         widthFactor: 1,
@@ -198,11 +197,11 @@ class __PageContentState extends State<_PageContent> {
           ),
           Row(
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   setState(() {
                     NeumorphicTheme.of(context)
-                        .updateCurrentTheme(NeumorphicThemeData(
+                        ?.updateCurrentTheme(NeumorphicThemeData(
                       depth: 1,
                       intensity: 0.5,
                       accentColor: Colors.cyan,
@@ -213,11 +212,11 @@ class __PageContentState extends State<_PageContent> {
                   "style 1",
                 ),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   setState(() {
                     NeumorphicTheme.of(context)
-                        .updateCurrentTheme(NeumorphicThemeData(
+                        ?.updateCurrentTheme(NeumorphicThemeData(
                       depth: 8,
                       intensity: 0.3,
                       accentColor: Colors.greenAccent,

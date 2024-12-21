@@ -107,7 +107,7 @@ class __PageState extends State<_Page> {
     final Color buttonInnactiveColor = Colors.white;
 
     final Color textActiveColor = Colors.white;
-    final Color textInactiveColor = Colors.black.withOpacity(0.3);
+    final Color textInactiveColor = Colors.black.withValues(alpha: 0.3);
 
     return Card(
       margin: EdgeInsets.all(8),

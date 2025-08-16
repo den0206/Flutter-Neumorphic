@@ -5,7 +5,7 @@ import 'package:example/lib/top_bar.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class RangeSliderWidgetPage extends StatefulWidget {
-  RangeSliderWidgetPage({required Key key}) : super(key: key);
+  RangeSliderWidgetPage({Key? key}) : super(key: key);
 
   @override
   createState() => _RangeWidgetPageState();

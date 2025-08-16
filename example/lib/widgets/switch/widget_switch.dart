@@ -5,7 +5,7 @@ import 'package:example/lib/top_bar.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class SwitchWidgetPage extends StatefulWidget {
-  SwitchWidgetPage({required Key key}) : super(key: key);
+  SwitchWidgetPage({Key? key}) : super(key: key);
 
   @override
   createState() => _WidgetPageState();
@@ -109,7 +109,7 @@ NeumorphicSwitch(
             },
           ),
           SizedBox(width: 12),
-          FlatButton(
+          ElevatedButton(
               onPressed: () {
                 setState(() {
                   isEnabled = !isEnabled;
@@ -147,7 +147,7 @@ bool isChecked;
 NeumorphicSwitch(
     value: isChecked,
     style: NeumorphicSwitchStyle(
-         thumbShape: NeumorphicShape.flat 
+         thumbShape: NeumorphicShape.flat
          //or convex, concave
     ),
     onChanged: (value) {

@@ -1,3 +1,5 @@
+* Update to use with Flutter 3.38.0
+
 ## 3.3.0
 
 * Update to use with Flutter 3.22.0
